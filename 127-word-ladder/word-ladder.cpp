@@ -11,6 +11,7 @@ public:
     return diff == 1;
     }
     int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        if(!count(wordList.begin(),wordList.end(),endWord))return 0;
         map<string,vector<string>> graph;
 
         if(!count(wordList.begin(),wordList.end(),beginWord))wordList.push_back(beginWord);
