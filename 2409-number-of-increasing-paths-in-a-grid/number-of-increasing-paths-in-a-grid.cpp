@@ -1,5 +1,5 @@
 #pragma GCC target("avx2")
-
+#pragma GCC optimize("Ofast")
 class Solution {
 public:
     int countPaths(vector<vector<int>>& grid) {
