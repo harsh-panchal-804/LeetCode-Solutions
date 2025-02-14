@@ -1,3 +1,5 @@
+#pragma GCC target("avx2")
+
 class Solution {
 public:
     int countPaths(vector<vector<int>>& grid) {
